@@ -44,6 +44,11 @@ same patterns as the sample service.
 
 Here is what this little application demonstrates:
 
+* Create a new to-do item with a title and description.
+* Retrieve a list of all to-do items.
+* Retrieve a specific to-do item by its ID.
+* Update the title and description of a to-do item.
+* Delete a to-do item by its ID.
 * Full integration with the latest **Spring** Framework: inversion of control, dependency injection, etc.
 * Packaging as a single war with embedded container (tomcat 8): No need to install a container separately on the host
   just run using the ``java -jar`` command
