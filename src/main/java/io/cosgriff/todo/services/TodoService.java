@@ -8,8 +8,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+
 @Slf4j
+@Service
 public class TodoService {
     private final TodoRepository todoRepository;
 
