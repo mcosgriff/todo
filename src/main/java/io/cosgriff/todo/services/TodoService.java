@@ -50,7 +50,7 @@ public class TodoService {
                     log.info("Updating todo");
                     p.setTitle(todo.getTitle());
                     p.setDescription(todo.getDescription());
-                    return this.todoRepository.save(todo);
+                    return this.todoRepository.save(p);
                 }
         ).orElseGet(() -> {
             // Create
