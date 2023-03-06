@@ -59,8 +59,4 @@ public class TodoService {
             return this.todoRepository.save(todo);
         });
     }
-
-    public Todo getOrCreate(final Todo todo, final Long id) {
-        return this.todoRepository.findById(id).orElseGet(() -> this.todoRepository.save(todo));
-    }
 }
