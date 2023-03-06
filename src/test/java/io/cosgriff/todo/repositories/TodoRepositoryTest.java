@@ -31,10 +31,10 @@ public class TodoRepositoryTest {
 
     @Test
     public void givenTodoToAddShouldReturnAddedTodo() {
-        Todo todo = new Todo(5L, "Important", "This needs to be performed.");
+        Todo todo = todoRepository.save(new Todo(5L, "Important", "This needs to be performed."));
 
         Todo fetchedTodo = todoRepository.findById(todo.getId()).get();
-        Assertions.assertEquals(5L, fetchedTodo.getId());
+        Assertions.assertEquals(todo.getId(), fetchedTodo.getId());
     }
 
     @Test
